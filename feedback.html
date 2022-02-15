@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Feedback</title>
+    <style>
+        form{
+            align-items: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 20%;
+            margin-bottom: 30%;
+            border-radius: 5px;
+            background-color: #100031;
+
+        }
+        #email{
+            border-color: aquamarine;
+            margin-left: 20px;
+            
+            
+        }
+        #sed{
+            border-color: #ec38bc;
+            margin-left: 20px;
+            margin-bottom:40px;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            color:#fff;
+        }
+        label{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            color:#fff;
+        }
+        body {
+  font-family: sans-serif;
+  background: -webkit-linear-gradient(
+    to right,
+    #fdeff9,
+    #ec38bc,
+    #7303c0,
+    #03001e
+  );
+  background: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.here-btn{
+    margin-left: 20%;
+    margin-bottom: 20%;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: #ec38bc;
+    color: yellow;
+    border:1px solid #fff;
+    cursor:pointer;
+}
+.here-btn:hover{
+    border:1px solid red;
+    background: #f44336;
+    transition: 1s;
+
+
+}
+    </style>
+</head>
+<form action="Desktop/result.html" target="_blank">
+    <h1>Give your Suggesitions</h1>
+    <label for="email">Email</label><br>
+    <input type="text" id="email" required><br><br>
+    <label for="Sugessitions" id="sed" >*Suggesitions</label><br>
+        <textarea id="sed" name="address" rows="10" cols="50"></textarea><br>
+        <button type="button" class="here-btn">Submit</button>
+
+</form>
+</html>

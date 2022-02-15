@@ -1,0 +1,125 @@
+.footer{
+    text-align: center;
+    margin:auto;
+    width:80%;
+    padding:10px;
+}
+.footer h1{
+    color: rgba(16, 40, 146, 0.685);
+    font-size: 36px;
+    font-weight: 600;
+}
+.footer p{
+    color:#777;
+    font-size: 20px;
+    font-weight: 300;
+    padding:40px;
+}
+.cricket{
+    margin-top:5%;
+    display:flex;
+    column-gap: 40px;
+    justify-content: space-between;
+    
+}
+.rohitsharma:hover{
+    box-shadow: 0 0 19px 10px #777;
+}
+.rohitsharma{
+    flex-basis: 30%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+
+}
+.rohitsharma img{
+    width:70%;
+}
+.rohitsharma p{
+    padding:10px 15px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+}
+.virat{
+    flex-basis: 40%;
+    background: #fff3f3;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding:5px 3px;
+    box-sizing: border-box;
+
+}
+.virat:hover{
+    box-shadow: 0 0 19px 10px #777;
+}
+.sachin{
+    flex-basis: 40%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:5px 3px;
+    box-sizing: border-box;
+}
+.virat p{
+    padding:10px 15px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sachin p{
+    padding:10px 15px;
+    text-align: justify;
+    font-size: 20px;;
+    font-weight: 500;
+}
+.virat img{
+    padding:5px 5px;
+    width:50%;
+}
+.sachin img{
+    padding:5px 5px;
+    width:50%;
+}
+.second{
+     margin-top:5%;
+     display:flex;
+     column-gap: 40px;
+      justify-content: space-between;
+}
+.shewag{
+        flex-basis: 30%;
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        box-sizing: border-box;
+}
+.vvs{
+        flex-basis: 30%;
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        box-sizing: border-box;
+
+}
+.ganguly{
+    flex-basis: 30%;
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        box-sizing: border-box;
+}
+.vvs p{
+    font-weight: 200;
+    text-align: justify;
+}
+.shewag p{ 
+    font-weight: 200;
+    text-align: justify;
+}
+.ganguly p{
+    font-weight: 200;
+    text-align: justify;
+
+}
