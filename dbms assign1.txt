@@ -1,0 +1,92 @@
+Advantages (or) Benefits of DBMS
+******************************************
+
+Reducing Data Redundancy
+
+The file based data management systems contained multiple files that were stored in many different locations in a system or even across multiple systems. Because of this, there were sometimes multiple copies of the same file which lead to data redundancy. 
+This is prevented in a database as there is a single database and any change in it is reflected immediately. Because of this, there is no chance of encountering duplicate data.
+Sharing of Data
+
+In a database, the users of the database can share the data among themselves. There are various levels of authorisation to access the data, and consequently the data can only be shared based on the correct authorisation protocols being followed. 
+Many remote users can also access the database simultaneously and share the data between themselves.
+Data Integrity
+
+Data integrity means that the data is accurate and consistent in the database. Data Integrity is very important as there are multiple databases in a DBMS. All of these databases contain data that is visible to multiple users. So it is necessary to ensure that the data is correct and consistent in all the databases and for all the users. 
+Data Security
+
+Data Security is vital concept in a database. Only authorised users should be allowed to access the database and their identity should be authenticated using a username and password. Unauthorised users should not be allowed to access the database under any circumstances as it violates the integrity constraints.
+Privacy
+
+The privacy rule in a database means only the authorized users can access a database according to its privacy constraints. There are levels of database access and a user can only view the data he is allowed to. For example - In social networking sites, access constraints are different for different accounts a user may want to access.
+Backup and Recovery
+
+Database Management System automatically takes care of backup and recovery. The users don't need to backup data periodically because this is taken care of by the DBMS. Moreover, it also restores the database after a crash or system failure to its previous condition. 
+Data Consistency
+
+Data consistency is ensured in a database because there is no data redundancy. All data appears consistently across the database and the data is same for all the users viewing the database. Moreover, any changes made to the database are immediately reflected to all the users and there is no data inconsistency.
+
+
+
+2nd 
+Types of Database Language
+
+
+
+1. Data Definition Language
+oDDL stands for Data Definition Language. It is used to define database structure or pattern.
+oIt is used to create schema, tables, indexes, constraints, etc. in the database.
+oUsing the DDL statements, you can create the skeleton of the database.
+oData definition language is used to store the information of metadata like the number of tables and schemas, their names, indexes, columns in each table, constraints, etc.
+Here are some tasks that come under DDL:
+oCreate: It is used to create objects in the database.
+oAlter: It is used to alter the structure of the database.
+oDrop: It is used to delete objects from the database.
+Difference between Drop and Truncate 
+Truncate: It is used to remove all records from a table.
+2. Data Manipulation Language
+DML stands for Data Manipulation Language. It is used for accessing and manipulating data in a database. It handles user requests.
+Here are some tasks that come under DML:
+5
+oSelect: It is used to retrieve data from a database.
+oInsert: It is used to insert data into a table.
+oUpdate: It is used to update existing data within a table.
+oDelete: It is used to delete all records from a table.
+3. Data Control Language
+DCL stands for Data Control Language. 
+Here are some tasks that come under DCL:
+oGrant: It is used to give user access privileges to a database.
+oRevoke: It is used to take back permissions from the user.
+4. Transaction Control Language
+TCL is used to run the changes made by the DML statement. 
+Commit: It is used to save the transaction on the database.
+Rollback: It is used to restore the database to original since the last Commit.
+Interfaces in DBMS
+***************************************
+A database management system (DBMS) interface is a user interface that allows for the ability to input queries to a database without using the query language itself. 
+1.Menu-Based Interfaces for Web Clients or Browsing
+2. Forms-Based Interfaces 
+3. Graphical User Interface
+4. Natural language Interfaces 
+5. Speech Input and Output etc..
+
+3rd
+The Internal level  / physical level
+
+The internal level has an internal schema, which describes the physical storage structure of the database.
+
+The internal schema uses a physical data model and describes the complete details of data storage and access paths for the database.
+
+
+The conceptual level /logical  level
+
+The conceptual level has a conceptual schema, which describes what data are stored in database and what relationship among those data
+The conceptual schema hides the details of physical storage structures. It concentrates on describing:
+
+entities, data types, relationships, user operations, and constraints.
+
+A high-level data model or an implementation data model can be used at this level.
+
+
+The external level /view  level
+
+The external level includes a number of external schemas or user views. This is the highest level. A high-level data model or an implementation data model can be used at this level.
