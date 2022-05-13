@@ -1,0 +1,217 @@
+﻿/*lexicographical next permutation*/
+# include<iostream>
+# include<algorithm>
+# include<vector>
+using namespace std;
+int main()
+{
+        vector<int> l ;
+        int n,temp;
+    cout<<"enter size of vector";
+        cin>>n;
+        for(int q=0;q<n;q++)
+        {
+        cout<<"Enter element:";
+        cin>>temp;
+        l.push_back(temp);
+        }
+        bool val = next_permutation(l.begin(),l.end());
+        if(val == false)
+    cout<<"No next permutation";
+        else
+        {
+        cout<<"Next:";
+        }
+        for(auto j=l.begin();j!=l.end();j++)
+        {
+        cout<<*j;
+            
+        }
+        cout<<endl;
+        return 0;
+        
+}
+Output:
+enter size of vector3
+Enter element:1
+Enter element:2
+Enter element:3
+Next:132
+
+
+
+
+/*lexicographical nth permutation*/
+# include<iostream>
+# include<algorithm>
+# include<vector>
+using namespace std;
+int main()
+{
+        vector<int> l ;
+        int n,temp;
+    cout<<"enter size of vector";
+        cin>>n;
+        for(int q=0;q<n;q++)
+        {
+        cout<<"Enter element:";
+        cin>>temp;
+        l.push_back(temp);
+        }
+    sort(l.begin(),l.end());
+        int s;
+    cout<<"Enter which permutation you want";
+        cin>>s;
+        while(s--)
+        {
+        next_permutation(l.begin(),l.end());
+        }
+    cout<<"The"<<s<<"th permutation is:";
+        for(auto j=l.begin();j!=l.end();j++)
+        {
+        cout<<*j;
+        }
+}
+Output:
+enter size of vector3
+Enter element:1
+Enter element:2
+Enter element:3
+Enter which permutation you want3
+The-1th permutation is:231
+
+
+/* Regeular Expression match*/
+# include<iostream>
+# include<algorithm>
+# include<regex>
+using namespace std;
+int main()
+{
+   string a,b;
+   cout<<"Enter the String to match:";
+   cin>>a;
+   cout<<"Enter the pattern";
+   cin>>b;
+   regex pt(b);
+   if(regex_match(a,pt))
+   {
+       cout<<"There is match";
+   }
+   else
+   {
+       cout<<"no match";
+   }
+}
+Output:
+Enter the String to match:aa
+Enter the pattern.*
+There is match
+/*subset sum*/
+#include<iostream>
+#include<deque>
+#include<algorithm>
+using namespace std;
+bool SubsetSum(int *arr, int res[],int sum)
+{
+    int n ,c=0;
+    n= sizeof(arr)/sizeof(arr[0]);
+    if(sum==0)
+    {
+        return true;
+    }
+    if(sum<0)
+    {
+        return false;
+    }
+    if(n==0 && sum!=0 )
+    {
+        return false;
+    }
+    int temp=arr[0];
+    for(int i=0;i<n;i++)
+    {
+        arr[i]=arr[i+1];
+    }
+    if(n>0)
+    {
+        c=c+1;
+        res[c]=temp;
+        select = SubsetSum(arr,res,sum-temp)
+        reject = SubsetSum(arr,res,sum)
+        return reject or sum;
+    }
+}
+int main()
+{
+}
+/* Finding maximum element in the given array using divide and conquer*/
+#include <iostream>
+using namespace std;
+ 
+void findMinAndMax(int arr[], int low, int high, int &min, int &max)
+{
+    
+ 
+    if (low == high)                    
+    {
+        if (max < arr[low]) {           
+            max = arr[low];
+        }
+ 
+        if (min > arr[high]) {          
+            min = arr[high];
+        }
+ 
+        return;
+    }
+ 
+    
+    if (high - low == 1)                
+    {
+        if (arr[low] < arr[high])
+        {
+            if (min > arr[low]) {       
+                min = arr[low];
+            }
+ 
+            if (max < arr[high]) {      
+                max = arr[high];
+            }
+        }
+        else {
+            if (min > arr[high]) {      
+                min = arr[high];
+            }
+ 
+            if (max < arr[low]) {       
+                max = arr[low];
+            }
+        }
+        return;
+    }
+ 
+   
+    int mid = (low + high) / 2;
+ 
+    
+    findMinAndMax(arr, low, mid, min, max);
+ 
+   
+    findMinAndMax(arr, mid + 1, high, min, max);
+}
+ 
+int main()
+{
+    int arr[10] = { 7, 2, 9, 3, 1, 6, 7, 8, 4 };
+ 
+    int max = INT_MIN, min = INT_MAX;
+ 
+    int n = sizeof(arr)/sizeof(arr[0]);
+    findMinAndMax(arr, 0, n - 2, min, max);
+ 
+    cout << "The minimum array element is " << min << endl;
+    cout << "The maximum array element is " << max << endl;
+ 
+    return 0;
+}
