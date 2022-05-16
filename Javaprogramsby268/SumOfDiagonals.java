@@ -5,7 +5,7 @@
  */
 /**
  *
- * @author cisco
+ * @author Charan aluri
  */
 import java.util.*;
 public class SumOfDiagonals 
